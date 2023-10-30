@@ -1,29 +1,19 @@
-
+import { Route, Routes } from 'react-router-dom';
 import './App.css'
+import Contact from './components/Contact';
+import About from './components/About';
+import NavBar from './components/NavBar';
 
-function App() {
-  
-
+const App = () =>{
   return (
-    <>
-     <div className='container '>
-        <div className='pes-logo'>
-          <h2>PlacePrep</h2>
-        </div>
-        <div className='navbar'>
-          <nav>
-            <ul> 
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Student Corner</a></li>
-              <li><a href="#">Start Preparation</a></li>
-              <li><button>Login / Register</button></li>
-            </ul>
-          </nav>
-        </div>
-     </div>
-    </>
-  )
-}
+    <Routes>
+     
+      <Route path='/contact' element={<Contact />} />
+      <Route path='/navbar' element={<NavBar />} />
+      <Route path='/about' element={<About />} />
+    </Routes>
+  );
+};
 
-export default App
+export default App;
+
