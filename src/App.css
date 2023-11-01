@@ -1,20 +1,17 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Raleway:wght@500&family=Roboto+Slab:wght@500&display=swap');
 
-body{
-  background-color: #e8e8e8;
-}
+
 
 :root {
   --primary-color: #cce5ed;
-  --secondary-color: #20a4dc;
+  --secondary-color: #fcdd34;
 }
 .primary-color {
   color: var(--secondary-color);
- 
 }
 
- h1 , h3 , p{
+ h1 , h3 , p , h2, h4{
   font-family: 'Montserrat', sans-serif;
  }
 
@@ -25,12 +22,12 @@ body{
  }
 
  h3{
-  margin-left: 100px;
+  margin-left: 30px;
   font-weight: 100;
  }
 
- p{
-  margin-left: 120px;
+ .c-text{
+  margin-left: 60px;
   font-size: 18px;
   font-weight: 100;
  }
@@ -53,6 +50,11 @@ a {
   font-size: 20px;
 }
 
+.breadcrumb-item{
+  text-decoration: none; 
+  /* color: rgb(14, 14, 14);  */
+  font-size: 20px;
+}
 
 a:hover,
 a:active {
@@ -68,7 +70,7 @@ a:active {
 } */
 
 .main-bg{
-  background-image: url(/src/assets/home-bg.avif);
+  background-image: url(/src/assets/man.jpg);
   background-repeat: no-repeat;
 }
 
@@ -76,3 +78,46 @@ a:active {
   margin-left: 117px;
 }
 
+.prepare{
+  background-image: url(/src/assets/c1.avif);
+}
+
+.main-head{
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.weKnowSection{
+  padding-top: 35%;
+}
+
+.our-sec{
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 150%;
+}
+.practice-head{
+  font-weight: 700;
+}
+.breadcrumb-area{
+  background-image: url(/src/assets/thinking.png);
+  height: 365px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+
+.breadcrumb-item{
+  /* padding-left: 30%; */
+  padding-top: 65px;
+}
+
+.about-head{
+  font-weight: 700;
+  font-size: 45px;
+}
+
+.footer-container{
+  background-color: var(--secondary-color);
+  color: #000;
+}
