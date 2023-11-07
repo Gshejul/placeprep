@@ -11,7 +11,7 @@
   color: var(--secondary-color);
 }
 
- h1 , h3 , p , h2, h4{
+ h1 , h3 , p , h2, h4 , h5, h6{
   font-family: 'Montserrat', sans-serif;
  }
 
@@ -52,7 +52,6 @@ a {
 
 .breadcrumb-item{
   text-decoration: none; 
-  /* color: rgb(14, 14, 14);  */
   font-size: 20px;
 }
 
@@ -60,14 +59,6 @@ a:hover,
 a:active {
   color: var(--secondary-color);
 }
-
-
-/* .home-bg{
-  background-image: url(/src/assets/home-bg.avif);
-  background-repeat: no-repeat;
-  background-position: center;
-  
-} */
 
 .main-bg{
   background-image: url(/src/assets/man.jpg);
@@ -100,24 +91,43 @@ a:active {
   font-weight: 700;
 }
 .breadcrumb-area{
-  background-image: url(/src/assets/thinking.png);
-  height: 365px;
-  background-position: center;
+  background-image: url(/src/assets/myGif.gif);
   background-repeat: no-repeat;
+  height: 365px;
+}
+.breadcrumb{
+  justify-content: center;
 }
 
-
 .breadcrumb-item{
-  /* padding-left: 30%; */
   padding-top: 65px;
 }
 
 .about-head{
   font-weight: 700;
   font-size: 45px;
+  
 }
+
+ul>li .why-section {
+  font-weight: 600;
+  
+}
+
+.offer-head{
+  font-weight: 600;
+  color: #000;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.offer-bg{
+  background-color: var(--secondary-color);
+}
+
 
 .footer-container{
   background-color: var(--secondary-color);
   color: #000;
 }
+

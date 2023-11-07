@@ -3,7 +3,7 @@ import amazone from '../assets/brand.webp';
 import weKnowImg from '../assets/weKnowImg.png';
 import boy from '../assets/boy.png';
 import girl from '../assets/girl.png';
-import handshake from '../assets/handshake.png';
+import handshake from '../assets/handshake.gif';
 
 import Footer from './Footer';
 const NavBar = () =>{
