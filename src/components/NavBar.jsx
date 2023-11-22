@@ -4,9 +4,14 @@ import weKnowImg from '../assets/weKnowImg.png';
 import boy from '../assets/boy.png';
 import girl from '../assets/girl.png';
 import handshake from '../assets/handshake.gif';
+import { useAuth0 } from "@auth0/auth0-react";
 
 import Footer from './Footer';
+import { Link } from 'react-router-dom';
 const NavBar = () =>{
+
+    const { loginWithRedirect , isAuthenticated, logout, user} = useAuth0();
+  
     return(
 
         <>
@@ -21,10 +26,32 @@ const NavBar = () =>{
                             <div>
                             <div className="container-fluid">
                                 <ul>
-                                    <li><a href="/navbar">Home</a></li>
+                                    <Link to={'/'}><li>Home</li></Link>
                                     <li><a href="/about">About</a></li>
                                     <li><a href="/contact">Contact</a></li>
-                                    <li><button>Login/register</button></li>
+                                    <li><a href="/OffCampus">OffCampus Updates</a></li>
+                                    <li> 
+                                    <ul> 
+                                        {
+                                        isAuthenticated  && <p>{user.name}</p>
+                                         }
+                                        {
+                                        isAuthenticated ? (
+                                            <li className="pt-2">
+                                            <button className="px-2"  onClick={() => logout({ logoutParams: { returnTo: window.location.origin } })}>
+                                                Log Out
+                                            </button>
+                                            </li>
+                                        ) : (
+                                            <li className="pt-2">
+                                            <button className="px-2 " onClick={() => loginWithRedirect()}>Log In</button>
+                                            </li>
+                                         )}
+                                    </ul>
+                                    </li>
+                                   
+                                    
+                      
                                 </ul>
                             </div>
                             </div>
